@@ -1,5 +1,6 @@
 function isPlainObject(value) {
-  // Start coding here
+  //  ถ้าเป็น Object และไม่ใช่ Array และไม่ใช่ Null
+  return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 
 // Example case
